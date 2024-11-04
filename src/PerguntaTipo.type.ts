@@ -1,0 +1,1 @@
+export type TipoPergunta = 'multiplaescolha' | 'escolhaunica' | 'texto';
