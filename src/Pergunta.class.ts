@@ -1,4 +1,5 @@
 import { TipoPergunta } from "./PerguntaTipo.type";
+import { Resposta } from "./Resposta.class";
 
 export class Pergunta{
   
@@ -6,17 +7,19 @@ export class Pergunta{
   private tipo: TipoPergunta;
   protected ordem: number = 1;
   explicacao: string = "";
-  opcoesRespostas: string[] = [""];
-  opcaoSelecionada: string;
+  opcoesRespostas: Resposta[] = [];
+  opcaoSelecionada: Resposta;
 
   public constructor(){
 
   }
 
-  public alterarTipoPergunta(novoTipo:'multiplaescolha' | 'escolhaunica' | 'texto'){
+  public alterarTipoPergunta(novoTipo:'multiplaescolha' | 'escolhaunica' | 'texto'):void | boolean{
     if(this.tipo == 'texto'){
       this.tipo = novoTipo;      
-    }
+    } else 
+      return false;
+    return;
   }
 
 }
