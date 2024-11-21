@@ -1,1 +1,1 @@
-export type TipoPergunta = 'multiplaescolha' | 'escolhaunica' | 'texto';
+export type TipoPergunta = 'multiplaescolha' | 'escolhaunica' | 'texto' | 'estrelas' | 'emotions' | 'NPS';
