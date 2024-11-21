@@ -4,7 +4,7 @@ Projeto criado para reforçar os conhecimento em orientação a objetos e testes
 
 A aplicação consiste numa API para fornecer o serviço de criação formulários de pesquisa várias opções de peguntas e respostas.
 
-Para executar os testes, deve-se clonar a aplicação e exe
+Para executar os testes, deve-se clonar a aplicação e executar o comando a seguir:
 
 `
     npm run test:watch
